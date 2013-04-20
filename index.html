@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Equal Heights</title>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="equalheights.js"></script>
+
+
+<style type="text/css">
+.child {
+    float: left;
+    height: auto;
+    padding: 10px;
+    width: 180px;
+    background-color: #999;
+    margin-right: 10px;
+    transition:height 2s;
+    -webkit-transition:height 2s;
+    -ms-transition:height 2s;
+    -moz-transition:height 2s;
+    -o-transition:height 2s;
+}
+
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+        $("a").click(function(){
+            $(".child").equalHeights();
+        });
+});
+</script>
+</head>
+
+<body>
+<div class="columns">
+    <div class="child">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+    <div class="child">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat lacus eleifend nulla aliquet fringilla in in leo. Sed vehicula condimentum commodo. Fusce vitae dui et quam mollis vulputate. Nulla quis lacus eget dui pellentesque malesuada. Cras pretium lacus id risus adipiscing facilisis </div>
+    <div class="child">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+</div>
+
+<br style="clear:both"/>
+<a href="#">Autoheight us</a>
+</body>
+</html>
